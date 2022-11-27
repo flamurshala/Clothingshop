@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Automotive Design</title>
+    <link rel="stylesheet" type="text/css"  href="indexStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>  <!--sourced-->
+    <script src="indexJS.js"></script>
+</head>
+<body>
+    <div class="nav_bar">
+
+        <div class="logo"><a href="index.html"><img src="logo.png" class="logo"></a></div>
+        <h1 style="text-align: center;">Automotive Design</h1>
+        <ul>
+        
+            <li><a href="#"><img src="nav_menu.png" class="nav_menu"></a>
+                <div class="drop-down">
+                    <ul>
+                        <li><a href="login.ex" style="color:white ;">Account</a></li>
+                        <li><a href="#" style="color:white ;">Contact us</a></li>
+                        <li><a href="#" style="color:white ;">About us</a></li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <hr>
+    <!-- sourced -->
+ <div class="container">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/4series.jpg"></div>
+          <div class="swiper-slide"><img src="images/huracan.jpg"></div>
+          <div class="swiper-slide"><img src="images/ford gt.jpg"></div>
+          <div class="swiper-slide"><img src="images/agera.jpg"></div>
+          <div class="swiper-slide"><img src="images/r35.jpg"></div>
+          <div class="swiper-slide"><img src="images/bentley.jpg"></div>
+        
+     
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+
+ </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  
+  });
+</script>
+<!-- sourced -->
+
+</body>
+</html>

@@ -1,15 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
+    
     background-color: black;
     color: white;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .nav_menu{
     width: 40px;
     height: 40px;
+   
+    
 }
 
 .nav_bar{
@@ -20,6 +25,7 @@ body{
     align-items: center;
     padding-bottom: 0%;
     position: relative;
+    z-index: 2;
 }
 .nav_bar ul{
     list-style: none;
@@ -77,8 +83,6 @@ hr{
     width: 100%;
     height: 100vh;
     margin-top: 5px;
-
-
 }
 .swiper{
     height: 700px;
@@ -93,6 +97,97 @@ hr{
 .swiper .swiper-pagination-bullet-active{
     background-color:   white;
 }
+/* sourced */
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.col-1{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.col-1 img{
+    width: 300px;
+    border-radius: 2px;
+}
+.col-2{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.col-2 img{
+    width: 300px;
+    border-radius: 2px;
+}
+.col-3{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+   
+    
+}
+.col-3 img{
+    width: 300px;
+     border-radius: 2px;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 60px;
+  
+}
+a{
+    color: white;
+}
+a:hover{
+    color: grey;
+}
+.overlayimg{
+    position:relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); 
+     width: 100%;
+     opacity:0; 
+     transition: .7s ease;
+ 
+}
+.col-1:hover .overlayimg{
+    opacity: 1.5;
+    margin-bottom: 50px;
+}
+.col-2:hover .overlayimg{
+    opacity: 1.5;
+    margin-bottom: 50px;
+  
+}
+.col-3:hover .overlayimg{
+    opacity: 1.5;
+    margin-bottom: 50px;
+  
+}
+
 
 
 

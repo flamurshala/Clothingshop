@@ -1,105 +1,104 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
 <head>
-    <title>Automotive Design</title>
-    <link rel="stylesheet" type="text/css"  href="indexStyle.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>  <!--sourced-->
-    <script src="indexJS.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
-   
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+         
+    <!--<title>Login & Registration Form</title>-->
 </head>
 <body>
-    <div class="nav_bar">
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
 
-        <div class="logo"><a href="index.html"><img src="logo.png" class="logo"></a></div>
-        <h1>Automotive Design</h1>
-        <ul>
-        
-            <li><a href="#"><img src="nav_menu.png" class="nav_menu"></a>
-                <div class="drop-down">
-                    <ul>
-                        <li><a href="login.ex" style="color:white ;">Account</a></li>
-                        <li><a href="#" style="color:white ;">Contact us</a></li>
-                        <li><a href="#" style="color:white ;">About us</a></li>
-                    </ul>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+                        
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link">Signup Now</a>
+                    </span>
                 </div>
-            </li>
+            </div>
 
-        </ul>
-    </div>
-    <hr>
-    <!-- sourced -->
- <div class="container">
-    <div class="swiper">
-        <div class="swiper-wrapper">
-         
-          <div class="swiper-slide"><img src="images/4series.jpg"></div>
-          <div class="swiper-slide"><img src="images/huracan.jpg"></div>
-          <div class="swiper-slide"><img src="images/ford gt.jpg"></div>
-          <div class="swiper-slide"><img src="images/agera.jpg"></div>
-          <div class="swiper-slide"><img src="images/r35.jpg"></div>
-          <div class="swiper-slide"><img src="images/bentley.jpg"></div>
-        
-           
-   
-     
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Create a password" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm a password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Signup">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
         </div>
-        <div class="swiper-pagination"></div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-      </div>
-
- </div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper', {
-    loop: true,
-    autoplay:{
-        delay:3000,
-        disableOnInteraction:false,
-    },
-  
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  
-  });
-</script>
-
-
-  <div class="small-container">
-    <h2 class="title">Featured products</h2>
-    <div class="row">
-      <div class="col-1">
-       <a href="#"> <img src="clothes/bmwm5.jpg">
-        <h4>Bmw m5 csi classic T-Shirt</h4></a>
-        <div class="overlayimg"><p>€14.99</p></div>
-      </div>
-      <div class="col-2">
-        <a href="#"><img src="clothes/ioniq5.jpg">
-        <h4>Ioniq 5 classic T-Shirt</h4></a>
-        <div class="overlayimg"><p>€14.99</p></div>
-      </div>
-      <div class="col-3">
-        <a href="#"><img src="clothes/tesla model S.jpg">
-        <h4>Tesla model S classic T-Shirt</h4></a>
-       <div class="overlayimg"><p>€14.99</p></div>
-      </div>
-      
     </div>
-  
-  
 
-  
+    <script src="script.js"></script>
+
 </body>
 </html>

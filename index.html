@@ -1,104 +1,217 @@
-
 <!DOCTYPE html>
-<!-- === Coding by CodingLab | www.codinglabweb.com === -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ===== Iconscout CSS ===== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="style.css">
-         
-    <!--<title>Login & Registration Form</title>-->
+<head>
+    <title>Automotive Design</title>
+    <link rel="stylesheet" type="text/css"  href="indexStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> <!-- sourced-->
+    <script src="indexJS.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/9abc9fc55a.js" ></script>
+  
+   
 </head>
 <body>
-    
-    <div class="container">
-        <div class="forms">
-            <div class="form login">
-                <span class="title">Login</span>
+  <header>
+    <div class="nav_bar">
 
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
-                        <i class="uil uil-envelope icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Enter your password" required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
-                    </div>
+        <div class="logo"><a href="index.html"><img src="images/logo.png" class="logo"></a></div>
+        <h1>Automotive Design</h1>
+        <ul>
+        
+            <li><a href="login form/index.html"><img src="images/user-icon.png" class="user-icon"></a>
+            </li>
 
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="logCheck">
-                            <label for="logCheck" class="text">Remember me</label>
-                        </div>
-                        
-                        <a href="#" class="text">Forgot password?</a>
-                    </div>
-
-                    <div class="input-field button">
-                        <input type="button" value="Login">
-                    </div>
-                </form>
-
-                <div class="login-signup">
-                    <span class="text">Not a member?
-                        <a href="#" class="text signup-link">Signup Now</a>
-                    </span>
-                </div>
-            </div>
-
-            <!-- Registration Form -->
-            <div class="form signup">
-                <span class="title">Registration</span>
-
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your name" required>
-                        <i class="uil uil-user"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
-                        <i class="uil uil-envelope icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Create a password" required>
-                        <i class="uil uil-lock icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Confirm a password" required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
-                    </div>
-
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="termCon">
-                            <label for="termCon" class="text">I accepted all terms and conditions</label>
-                        </div>
-                    </div>
-
-                    <div class="input-field button">
-                        <input type="button" value="Signup">
-                    </div>
-                </form>
-
-                <div class="login-signup">
-                    <span class="text">Already a member?
-                        <a href="#" class="text login-link">Login Now</a>
-                    </span>
-                </div>
-            </div>
-        </div>
+        </ul>
     </div>
+  </header>
+  <main>
+    <!-- sourced -->
+ <div class="container">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+         
+          <div class="swiper-slide"><img src="images/4series.jpg"></div>
+          <div class="swiper-slide"><img src="images/huracan.jpg"></div>
+          <div class="swiper-slide"><img src="images/ford gt.jpg"></div>
+          <div class="swiper-slide"><img src="images/agera.jpg"></div>
+          <div class="swiper-slide"><img src="images/r35.jpg"></div>
+          <div class="swiper-slide"><img src="images/nissan350z.jpg"></div>
 
-    <script src="script.js"></script>
+           
+   
+     
+        </div>
+        <div class="swiper-pagination"></div>
 
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+
+ </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  
+  });
+</script>
+<!-- <hr> -->
+
+<!-- row 1 -->
+  <div class="small-container">
+    <h2 class="title">Featured products</h2>
+    <div class="row">
+      <div class="col-1">
+       <a href="bmw 3series details/product-details-bmw3s.html" style="text-decoration: none;"> <img src="clothes/bmw3series.jpg">
+        <h4>Bmw 3 series classic T-Shirt</h4></a>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          
+        </div>
+        <div class="overlayimg"><p>€14.99</p></div>
+      </div>
+      <div class="col-2">
+        <a href="ioniq5_details/index.html" style="text-decoration: none;"><img src="clothes/ioniq5.jpg">
+        <h4>Ioniq 5 classic T-Shirt</h4></a>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+       
+        </div>
+        <div class="overlayimg"><p>€14.99</p></div>
+      </div>
+      <div class="col-3">
+        <a href="modelS_details/index.html" style="text-decoration: none;"><img src="clothes/tesla model S.jpg">
+        <h4>Model S classic T-Shirt</h4></a>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+         
+        </div>
+       <div class="overlayimg"><p>€14.99</p></div>
+      </div>
+      
+    </div>
+  
+    <!-- row 2 -->
+    
+  <div class="small-container">
+    <h2 class="title">Other products</h2>
+    <div class="row">
+      <div class="col-1">
+       <a href="Bentley_Continental_details/index.html" style="text-decoration: none;"> <img src="clothes/bentley contnental.jpg">
+        <h4>Bentley classic T-Shirt</h4></a>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="overlayimg"><p>€14.99</p></div>
+      </div>
+      <div class="col-2">
+        <a href="corvette_details/index.html" style="text-decoration: none;"><img src="clothes/corvette c5.jpg">
+        <h4>Corvette C5 classic T-Shirt</h4></a>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="overlayimg"><p>€14.99</p></div>
+      </div>
+      <div class="col-3">
+        <a href="m3E30_details/index.html" style="text-decoration: none;"><img src="clothes/e30 m3.jpg">
+        <h4>Bmw E30 m3 classic T-Shirt</h4></a>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+       <div class="overlayimg"><p>€14.99</p></div>
+      </div>
+    </div>
+  
+  </main>
+
+    <!-- footer -->
+    <footer>
+    <div class="footer">
+      <div class="container-footer">
+          <div class="row">
+              <div class="footer-col-1">
+                  <h3>SHOP INFO</h3>
+                  <ul>
+                    <li>Fan art</li>
+                    <li>Blog</li>
+                    <li>Discounts</li>
+                  </ul>
+              </div>
+              <div class="footer-col-2">
+                <h3>CUSTOMER CARE</h3>
+                <ul>
+                  <li>Track order</li>
+                  <li>Return</li>
+                  <li>FAQs</li>
+                </ul>
+              </div>
+              <div class="footer-col-3">
+                <h3>SOCIAL MEDIA</h3>
+                <ul>
+                  <a href="https://www.instagram.com/automotivedaily420/"style="text-decoration: none;"><li>Instagram</li></a>  
+                  <a href="https://www.facebook.com/flamur45/"style="text-decoration: none;"><li>Facebook</li></a> 
+                 <a href="#" style="text-decoration: none;"> <li>Twitter</li></a>
+                </ul>
+              </div>
+              <div class="footer-col-4">
+                <h3>ABOUT</h3>
+                <ul>
+                  <li>About us</li>
+                  <li>Contact us</li>
+                  <li>Privacy policy</li>
+                </ul>
+              </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2022-Automotive Design</p>
+      </div>
+  </div>
+  </footer>
+  
+
+  
 </body>
 </html>

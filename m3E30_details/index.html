@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Automotive Design</title>
+    <link rel="stylesheet" type="text/css"  href="prodDetails.css">
+   
+    <script src="indexJS.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/9abc9fc55a.js" ></script>
+  
+   
+</head>
+<body>
+  <header>
+    <div class="nav_bar">
+        <div class="logo"><a href="../index.html"><img src="../images/logo.png" class="logo"></a></div>
+        <h1>Automotive Design</h1>
+        <ul>
+            <li><a href="#login form/index.html"><img src="../images/user-icon.png" class="user-icon"></a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+  </header>
+
+<!--------------------------------------->
+
+<main>
+    <div class = "card-wrapper">
+        <div class = "card">
+          <!-- pjesa ne te majt -->
+          <div class = "product-imgs">
+            <div class = "img-display">
+              <div class = "img-showcase">
+                <img src ="e30_m3-1.jpg">
+                <img src ="e30_m3-2.jpg">
+                <img src ="e30_m3-3.jpg">
+                <img src ="e30_m3-4.jpg">
+               
+              </div>
+            </div>
+            <div class = "img-select">
+              <div class = "img-item">
+                <a href = "#" data-id = "1">
+                  <img src = "e30_m3-1.jpg" >
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "2">
+                  <img src = "e30_m3-2.jpg" >
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "3">
+                  <img src = "e30_m3-3.jpg" >
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "4">
+                  <img src = "e30_m3-4.jpg" >
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- teksti ne te djatht -->
+          <div class = "product-content">
+            <h2 class = "product-title">E30 m3 classic T-Shirt</h2>
+            <div class = "product-rating">
+              <i class = "fas fa-star"></i>
+              <i class = "fas fa-star"></i>
+              <i class = "fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+              <span>3.4.(27)</span>
+            </div>
+  
+            <div class = "product-price"
+              <p class = "price">Price:<span>€14.99</span></p>
+            </div>
+            
+            <div class = "product-detail">
+              <h2>About this item: </h2>
+              <p>Get your BMW e30 m3 merch.Add one more item to your wardrobe collection with this simple design or give it as the perfect gift.</p>
+              <p>
+                <ul>
+                    <li style="color: silver;">Male model shown is 6'0" / 183 cm tall and wearing size Medium</li>
+                    <li style="color: silver;">Female model shown is 5'8" / 173 cm tall and wearing size Small</li>
+                    <li style="color: silver;">Heavyweight 5.3 oz / 180 gsm fabric, solid colors are 100% preshrunk cotton,
+                     heather grey is 90% cotton/10% polyester, denim heather is 50% cotton/ 50% polyeste</li>
+                    <li style="color: silver;">Double-needle hems and neck band for durability</li>
+                </ul>
+              </p>
+              <ul>
+                <li>Color: <span>Black</span></li>
+                <li>Available: <span>in stock</span></li>
+                <li>Category: <span>T-Shirt</span></li>
+                <li>Shipping Area: <span>Kosovo only</span></li>
+                <li>Shipping Fee: <span>Free</span></li>
+              </ul>
+            </div>
+  
+            <div class = "purchase-info">
+              <input type = "number" min = "0" value = "0">
+                <select>
+                    <option>Select Size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <select>
+                    <option>Select gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+              <button type = "button" class = "btn">
+                buy now <i class = "fas fa-shopping-cart"></i>
+              </button>
+            </div>
+  
+            <div class = "social-links">
+              <p>Share At: </p>
+              <a href = "#">
+                <i class = "fab fa-facebook-f"></i>
+              </a>
+              <a href = "#">
+                <i class = "fab fa-twitter"></i>
+              </a>
+              <a href = "#">
+                <i class = "fab fa-instagram"></i>
+              </a>
+              <a href = "#">
+                <i class = "fab fa-whatsapp"></i>
+              </a>
+              <a href = "#">
+                <i class = "fab fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
+      </script>
+
+</main>
+
+<!----------------------footer--------------------------->
+<footer>
+  <div class="footer">
+    <div class="container-footer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>SHOP INFO</h3>
+                <ul>
+                  <li>Fan art</li>
+                  <li>Blog</li>
+                  <li>Discounts</li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+              <h3>CUSTOMER CARE</h3>
+              <ul>
+                <li>Track order</li>
+                <li>Return</li>
+                <li>FAQs</li>
+              </ul>
+            </div>
+            <div class="footer-col-3">
+              <h3>SOCIAL MEDIA</h3>
+              <ul>
+                <a href="https://www.instagram.com/automotivedaily420/"style="text-decoration: none;"><li>Instagram</li></a>  
+                <a href="https://www.facebook.com/flamur45/"style="text-decoration: none;"><li>Facebook</li></a> 
+               <a href="#" style="text-decoration: none;"> <li>Twitter</li></a>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>About</h3>
+              <ul>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Privacy policy</li>
+                <li>User Agreement</li>
+              </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022-Automotive Design</p>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>

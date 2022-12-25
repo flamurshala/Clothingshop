@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
 
 * {
 	box-sizing: border-box;
 }
 body {
     font-family: montserrat;
-    background: #000000;
+    background: url(bg_img.jpeg);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -14,7 +13,7 @@ body {
 	margin: 0;
 }
 .container {
-	background-color: #fff;
+	background-color: #f0f0f0;
 	border-radius: 10px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
